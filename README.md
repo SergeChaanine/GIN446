@@ -3,4 +3,4 @@
 
 This repository will hold all projects for the **GIN446 class**.
 
-Last updated: 10/09/2025 2:25 PM
+<u>Last updated:</u> 10/09/2025 2:25 PM

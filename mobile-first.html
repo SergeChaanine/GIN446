@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mobile-First Development</title>
-  <meta name="description" content="Meaning, importance, and principles of mobile-first design and development. Includes practical guidance and references.">
+  <meta name="description"
+    content="Meaning, importance, and principles of mobile-first design and development. Includes practical guidance and references.">
 </head>
 
 <body>
   <header>
-    <h1>Mobile-First Development</h1>
     <nav aria-label="Site navigation">
+      <h3>Site Navigation:</h3>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="history.html">History</a></li>
@@ -18,6 +20,7 @@
         <li><a href="stats.html">Stats</a></li>
         <li><a href="references.html">References</a></li>
       </ul>
+      <h1>Mobile-First Development</h1>
     </nav>
   </header>
 
@@ -29,34 +32,52 @@
 
       <figure>
         <img src="mobilephone.jpg" alt="Hand holding a smartphone showing a web page" width="600">
-        <figcaption>Figure: Mobile devices are the primary access point to the web for many people worldwide.</figcaption>
+        <figcaption>Figure: Mobile devices are the primary access point to the web for many people worldwide.
+        </figcaption>
       </figure>
 
       <section>
-        <p>Mobile-First development is an approach that prioritizes the mobile user experience from the start: design and build for constrained screens, limited bandwidth, and touch interaction first, then scale up to larger screens. This mindset produces sites that are faster, more accessible, and focused on essential content. Google’s mobile-first indexing means the mobile version of a page is used for indexing and ranking, so a mobile-first approach also supports discoverability in search engines (see References).</p>
+        <p>Mobile-First development is an approach that prioritizes the mobile user experience from the start: design
+          and build for constrained screens, limited bandwidth, and touch interaction first, then scale up to larger
+          screens. This mindset produces sites that are faster, more accessible, and focused on essential content.
+          Google’s mobile-first indexing means the mobile version of a page is used for indexing and ranking, so a
+          mobile-first approach also supports discoverability in search engines (see References).</p>
       </section>
 
       <section>
         <h3>Why start with mobile?</h3>
-        <p>There are three practical reasons to start with mobile. First, a large and growing share of global web traffic originates from mobile devices; designing for the smaller screen forces prioritization of content and interactions. Second, mobile-first encourages performance-first thinking: fewer and smaller assets, lower initial payloads, and simpler layouts. Third, mobile-first aligns with inclusive design — focusing on essential content and clear navigation helps people on limited bandwidth, older devices, or assistive technologies.</p>
+        <p>There are three practical reasons to start with mobile. First, a large and growing share of global web
+          traffic originates from mobile devices; designing for the smaller screen forces prioritization of content and
+          interactions. Second, mobile-first encourages performance-first thinking: fewer and smaller assets, lower
+          initial payloads, and simpler layouts. Third, mobile-first aligns with inclusive design — focusing on
+          essential content and clear navigation helps people on limited bandwidth, older devices, or assistive
+          technologies.</p>
       </section>
 
       <section>
         <h3>Core principles</h3>
         <ul>
-          <li><strong>Content-first:</strong> Prioritize what the user needs most. Reduce non-essential UI chrome for small screens.</li>
-          <li><strong>Progressive enhancement:</strong> Start with a reliable baseline experience that works without advanced features, then layer on enhancements for capable browsers and devices. This reduces breakage and improves accessibility.</li>
-          <li><strong>Performance budget:</strong> Set and enforce a size/latency budget (images, fonts, and third-party scripts are common culprits).</li>
-          <li><strong>Touch-first interactions:</strong> Design controls that are large enough for finger taps and spaced to prevent accidental activation.</li>
-          <li><strong>Test on real devices and networks:</strong> Emulators are useful, but real-device testing on slow networks reveals real user pain points.</li>
+          <li><strong>Content-first:</strong> Prioritize what the user needs most. Reduce non-essential UI chrome for
+            small screens.</li>
+          <li><strong>Progressive enhancement:</strong> Start with a reliable baseline experience that works without
+            advanced features, then layer on enhancements for capable browsers and devices. This reduces breakage and
+            improves accessibility.</li>
+          <li><strong>Performance budget:</strong> Set and enforce a size/latency budget (images, fonts, and third-party
+            scripts are common culprits).</li>
+          <li><strong>Touch-first interactions:</strong> Design controls that are large enough for finger taps and
+            spaced to prevent accidental activation.</li>
+          <li><strong>Test on real devices and networks:</strong> Emulators are useful, but real-device testing on slow
+            networks reveals real user pain points.</li>
         </ul>
       </section>
 
       <section>
         <h3>Practical checklist</h3>
         <ol>
-          <li>Ensure the <code>&lt;meta name="viewport"&gt;</code> tag is present for proper scaling on mobile devices.</li>
-          <li>Optimize and serve appropriately sized images; prefer modern formats and lazy-loading strategies where appropriate.</li>
+          <li>Ensure the <code>&lt;meta name="viewport"&gt;</code> tag is present for proper scaling on mobile devices.
+          </li>
+          <li>Optimize and serve appropriately sized images; prefer modern formats and lazy-loading strategies where
+            appropriate.</li>
           <li>Minimize third-party scripts and prioritize critical rendering path assets.</li>
           <li>Provide clear, linear navigation and make link text descriptive for screen readers.</li>
           <li>Confirm content parity between mobile and desktop views to avoid search-indexing penalties.</li>
@@ -65,11 +86,14 @@
 
       <section>
         <h3>Further reading & sources</h3>
-        <p>Key industry guidance includes Google’s Mobile-First Indexing documentation and the GSMA State of Mobile Internet Connectivity report, which provide technical and market context for mobile-first strategies. For standards and responsive techniques, consult W3C and web.dev resources (see References).</p>
+        <p>Key industry guidance includes Google’s Mobile-First Indexing documentation and the GSMA State of Mobile
+          Internet Connectivity report, which provide technical and market context for mobile-first strategies. For
+          standards and responsive techniques, consult W3C and web.dev resources (see References).</p>
       </section>
 
       <footer>
-        <p>AI-use disclosure: This article was drafted with the assistance of an AI writing model and edited by the author.</p>
+        <p>AI-use disclosure: This article was drafted with the assistance of an AI writing model and edited by the
+          author.</p>
       </footer>
     </article>
   </main>
@@ -78,4 +102,5 @@
     <p><a href="index.html">Back to home</a></p>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mobile-First Development</title>
+  <meta name="description"
+    content="Meaning, importance, and principles of mobile-first design and development. Includes practical guidance and references.">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h3>Site Navigation:</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="html_versions.html">HTML History</a></li>
+        <li><a href="css-history.html">History of CSS + Rulesets</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+      <h1>Mobile-First Development</h1>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>Meaning, Importance, and Practical Principles</h2>
+      </header>
+
+      <figure>
+        <img src="pictures/mobilephone.jpg" alt="Hand holding a smartphone showing a web page" width="600">
+        <figcaption>Figure: Mobile devices are the primary access point to the web for many people worldwide.
+        </figcaption>
+      </figure>
+
+      <section>
+        <p>Mobile-First development is an approach that prioritizes the mobile user experience from the start: design
+          and build for constrained screens, limited bandwidth, and touch interaction first, then scale up to larger
+          screens. This mindset produces sites that are faster, more accessible, and focused on essential content.
+          Google’s mobile-first indexing means the mobile version of a page is used for indexing and ranking, so a
+          mobile-first approach also supports discoverability in search engines.</p>
+      </section>
+
+      <section>
+        <h3>Why start with mobile?</h3>
+        <p>There are three practical reasons to start with mobile. First, a large and growing share of global web
+          traffic originates from mobile devices; designing for the smaller screen forces prioritization of content and
+          interactions. Second, mobile-first encourages performance-first thinking: fewer and smaller assets, lower
+          initial payloads, and simpler layouts. Third, mobile-first aligns with inclusive design, focusing on
+          essential content and clear navigation helps people on limited bandwidth, older devices, or assistive
+          technologies.</p>
+      </section>
+
+      <section>
+        <h3>Core principles</h3>
+        <ul>
+          <li><strong>Content-first:</strong> Prioritize what the user needs most. Reduce non-essential UI chrome for
+            small screens.</li>
+          <li><strong>Progressive enhancement:</strong> Start with a reliable baseline experience that works without
+            advanced features, then layer on enhancements for capable browsers and devices. This reduces breakage and
+            improves accessibility.</li>
+          <li><strong>Performance budget:</strong> Set and enforce a size/latency budget (images, fonts, and third-party
+            scripts are common culprits).</li>
+          <li><strong>Touch-first interactions:</strong> Design controls that are large enough for finger taps and
+            spaced to prevent accidental activation.</li>
+          <li><strong>Test on real devices and networks:</strong> Emulators are useful, but real-device testing on slow
+            networks reveals real user pain points.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Practical checklist</h3>
+        <ol>
+          <li>Ensure the (meta name="viewport") tag is present for proper scaling on mobile devices.
+          </li>
+          <li>Optimize and serve appropriately sized images; prefer modern formats and lazy-loading strategies where
+            appropriate.</li>
+          <li>Minimize third-party scripts and prioritize critical rendering path assets.</li>
+          <li>Provide clear, linear navigation and make link text descriptive for screen readers.</li>
+          <li>Confirm content parity between mobile and desktop views to avoid search-indexing penalties.</li>
+        </ol>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>Last updated: September 2025</p>
+    <p><a href="index.html">Back to home</a></p>
+  </footer>
+</body>
+
+</html>

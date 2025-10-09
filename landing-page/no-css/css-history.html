@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>History of CSS and Core Concepts</title>
+   <meta name="description"
+      content="Overview of the history of CSS versions and its key concepts including rules, @-rules, and rulesets.">
+</head>
+
+<body>
+   <header>
+      <nav>
+         <h3>Site Navigation:</h3>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="mobile-first.html">Mobile-First</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="html_versions.html">HTML History</a></li>
+            <li><a href="references.html">References</a></li>
+         </ul>
+         <h1>History of CSS and Core Concepts</h1>
+      </nav>
+   </header>
+
+   <main>
+      <article>
+         <header>
+            <h2>From CSS1 to the Modern Living Standard</h2>
+         </header>
+
+         <section>
+            <p>CSS (Cascading Style Sheets) was introduced in 1996 as a way to separate content from presentation.
+               Before CSS,
+               web pages relied on HTML attributes like &lt;font&gt; and bgcolor, making
+               designs
+               hard to maintain. CSS brought flexibility, modularity, and control over how web pages look, and has since
+               become an essential part of web development.</p>
+         </section>
+
+         <section>
+            <h3>Early CSS versions</h3>
+            <p><strong>CSS1 (1996):</strong> Focused on basic styling: fonts, colors, margins, and simple selectors. It
+               provided the foundation for consistent design across browsers.</p>
+            <p><strong>CSS2 (1998):</strong> Expanded capabilities with positioning, media types, z-index, and advanced
+               selectors. This version also introduced the concept of style for different devices (print vs. screen).
+            </p>
+            <p><strong>CSS2.1 (2011):</strong> A revision of CSS2, ironing out inconsistencies and better reflecting
+               what
+               browsers had actually implemented.</p>
+         </section>
+
+         <section>
+            <h3>The CSS3 era</h3>
+            <p>Instead of a single monolithic specification, CSS3 was split into <strong>modules</strong>, each evolving
+               at
+               its own pace. Examples include the Flexbox module, Grid Layout, Transitions,
+               Animations, and Media Queries. This modular approach allowed browsers to implement
+               features
+               faster and gave developers earlier access to modern styling tools.
+            </p>
+         </section>
+
+         <section>
+            <h3>CSS today: a Living Standard</h3>
+            <p>Like HTML, CSS is now maintained as a <strong>Living Standard</strong> by the W3C and WHATWG communities.
+               Instead of version numbers (like “CSS4”), the standard evolves continuously. Features such as
+               container
+               queries, subgrid, and nesting are examples of modern additions being adopted in
+               browsers today.
+            </p>
+         </section>
+
+         <figure>
+            <img src="pictures/CSSrulesetImage.png" alt="CSS Ruleset" width="600">
+            <figcaption>Figure: CSS Rulesets.
+            </figcaption>
+         </figure>
+
+         <section>
+            <h3>Understanding CSS rules, @-rules, and rulesets</h3>
+            <ul>
+               <li><strong>CSS Rule:</strong> The basic building block of CSS. It can be a regular style rule (selector
+                  +
+                  declaration block) or an at-rule.</li>
+               <br>
+               <li><strong>Ruleset:</strong> A selector followed by a declaration block. Example:
+                  <pre>p { color: blue; font-size: 16px; }</pre>
+                  Here, p is the selector, and the declarations inside the braces form the ruleset.
+               </li>
+               <br>
+               <li><strong>@-Rule:</strong> A special rule that starts with @ and gives instructions to the
+                  CSS
+                  processor. Examples include:
+                  <ul>
+                     <li>@import — to import external stylesheets.</li>
+                     <li>@media — for responsive design, applying styles under certain conditions.</li>
+                     <li>@font-face — to define custom fonts.</li>
+                     <li>@keyframes — for animations.</li>
+                  </ul>
+               </li>
+            </ul>
+         </section>
+
+         <section>
+            <h3>Key takeaways</h3>
+            <ol>
+               <li>CSS evolved from simple styling in CSS1 to powerful layout and animation systems in modern CSS
+                  modules.</li>
+               <li>The modular, Living Standard approach ensures faster updates and continuous improvements.</li>
+               <li>Rules, rulesets, and @-rules are the foundation of CSS, enabling both simple styling and advanced
+                  responsive, interactive design.</li>
+            </ol>
+         </section>
+
+      </article>
+   </main>
+
+   <footer>
+      <p>Last updated: September 2025</p>
+      <p><a href="index.html">Back to home</a></p>
+   </footer>
+</body>
+
+</html>

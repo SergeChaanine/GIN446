@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <title>Website Landing Page</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <main>
-      <h1>Welcome to My Class Project</h1>
-      <p>Please choose a version to view:</p>
-      <div class="links">
-         <a href="no-css/index.html">No CSS Version</a>
-         <a href="css/index.html">CSS Version</a>
-      </div>
-   </main>
+    <header>
+        <div class="logo">
+            <span class="logo-icon">💻</span>
+            <span class="logo-text">GIN446 - Web Programming</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Choose Your Preferred Version</h1>
+            <p class="subtitle">This project presents two distinct approaches to solving the course requirements. Please
+                review your preferred option!</p>
+            <div class="options-container">
+                <div class="option-card">
+                    <div class="option-label">A</div>
+                    <h2>Pure HTML</h2>
+                    <p class="description">A minimalist implementation using only HTML without any CSS styling.</p>
+
+                    <ul class="features">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            <span>Semantic HTML structure</span>
+                        </li>
+                        <li>
+                            <span class="nocheck">✕</span>
+                            <span>No CSS</span>
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            <span>Focus on content structure</span>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-primary" onclick="window.location.href='no-css/index.html'">View Option
+                        A</button>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-label option-label-b">B</div>
+                    <h2>HTML + CSS</h2>
+                    <p class="description">A styled implementation combining HTML structure with CSS presentation.</p>
+
+                    <ul class="features">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            <span>Custom styling and layout</span>
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            <span>Enhanced visual design</span>
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            <span>Responsive presentation</span>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-secondary" onclick="window.location.href=''">⚠️ Under Maintenance!</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Programming - Fall 25/26</p>
+        <p>&copy; Serge Chaanine. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

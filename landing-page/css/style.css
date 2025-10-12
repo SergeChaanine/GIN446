@@ -7,7 +7,10 @@ body {
     line-height: 1.6;
 }
 
-header, h1, h2, h3 {
+header,
+h1,
+h2,
+h3 {
     color: #2a4d69;
     margin-top: 0;
 }
@@ -17,6 +20,7 @@ nav {
     padding: 10px 0;
     text-align: center;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -24,11 +28,13 @@ nav a {
     font-weight: 500;
     transition: color 0.2s;
 }
+
 nav a:hover {
     color: #4b86b4;
 }
 
-main, .container {
+main,
+.container {
     max-width: 900px;
     margin: 30px auto;
     background: #fff;
@@ -37,7 +43,8 @@ main, .container {
     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
 }
 
-button, .btn {
+button,
+.btn {
     background: #4b86b4;
     color: #fff;
     border: none;
@@ -47,7 +54,9 @@ button, .btn {
     font-size: 1em;
     transition: background 0.2s;
 }
-button:hover, .btn:hover {
+
+button:hover,
+.btn:hover {
     background: #2a4d69;
 }
 
@@ -55,6 +64,7 @@ a {
     color: #4b86b4;
     text-decoration: underline;
 }
+
 a:hover {
     color: #2a4d69;
 }
@@ -64,16 +74,21 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
 }
-th, td {
+
+th,
+td {
     border: 1px solid #dbe2ef;
     padding: 10px;
     text-align: left;
 }
+
 th {
     background: #f0f4f8;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     padding: 8px;
     border: 1px solid #bfc9d1;
     border-radius: 4px;
@@ -81,6 +96,7 @@ input, select, textarea {
     width: 100%;
     box-sizing: border-box;
 }
+
 label {
     font-weight: 500;
     margin-bottom: 6px;

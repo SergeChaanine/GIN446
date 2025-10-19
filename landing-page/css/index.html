@@ -1,54 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Semantic Web Primer - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Short research articles: History of the Web, Web Security, Mobile-First Development, Internet Stats (Middle East & Lebanon)."
+    />
+  </head>
 
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <title>Semantic Web Primer - Home</title>
-   <meta name="description"
-      content="Short research articles: History of the Web, Web Security, Mobile-First Development, Internet Stats (Middle East & Lebanon).">
-</head>
-
-</html>
-
-<body>
-   <header>
+  <body>
+    <header>
       <h1>Semantic Web Primer</h1>
       <nav>
-         <section>
-            <p>This small primer contains short articles that introduce major topics in web history, security,
-               mobile-first development, and regional statistics. Use the links below to open individual articles.</p>
-         </section>
-         <p>
-            <a href="history.html">History of the Web &amp; Browsers</a> |
-            <a href="security.html">Security on the Web</a> |
-            <a href="mobile-first.html">Mobile-First Development</a> |
-            <a href="stats.html">Internet Stats - Middle East &amp; Lebanon</a> |
-            <a href="html_versions.html">HTML History</a> |
-            <a href="css-history.html">CSS History and Rulesets</a> |
-            <a href="references.html">References</a>
-         </p>
+        <h3>Site Navigation:</h3>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="mobile-first.html">Mobile-First</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="html_versions.html">HTML History</a></li>
+          <li><a href="css-history.html">CSS History</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
       </nav>
-   </header>
+    </header>
 
-
-   <main>
+    <main>
       <article>
+        <header>
+          <h2>Welcome to the Semantic Web Primer</h2>
+        </header>
 
-         <figure>
-            <img src="pictures/www-structure.jpg" alt="Screenshot of an early browser interface" width="600">
-            <figcaption>In this figure we can see how the world wide web is accessible from everywhere on earth.
-            </figcaption>
-         </figure>
+        <section>
+          <p>
+            This small primer contains short articles that introduce major
+            topics in web history, security, mobile-first development, and
+            regional statistics. Use the navigation above or the links below to
+            explore individual articles.
+          </p>
 
-         <br>
+          <p>
+            Each section provides insights into how the web has evolved, the
+            challenges we face in securing online spaces, best practices for
+            modern development, and data-driven perspectives on internet usage
+            across different regions.
+          </p>
+        </section>
 
-         <footer>
-            <p><strong>💻 AI-use disclosure:</strong> This site content was partly made with the assistance of an AI
-               writing model and then
-               refined by Serge Chaanine. See References for sources and attribution.</p>
-            <p><strong>⚠️ Disclaimer:</strong> This site is intended for educational purposes only.</p>
-            <p><strong>⏰ Last updated:</strong> October 2025</p>
-         </footer>
+        <figure>
+          <img
+            src="pictures/www-structure.jpg"
+            alt="Screenshot of an early browser interface"
+            width="600"
+          />
+          <figcaption>
+            In this figure we can see how the world wide web is accessible from
+            everywhere on earth.
+          </figcaption>
+        </figure>
+
+        <section>
+          <h3>Topics Covered</h3>
+          <ul>
+            <li>
+              <strong>Web History:</strong> Evolution from static pages to
+              modern web applications
+            </li>
+            <li>
+              <strong>HTML & CSS Evolution:</strong> How markup and styling
+              languages have developed
+            </li>
+            <li>
+              <strong>Web Security:</strong> Common risks and practical defenses
+              for users and developers
+            </li>
+            <li>
+              <strong>Mobile-First Development:</strong> Principles and best
+              practices for modern web design
+            </li>
+            <li>
+              <strong>Regional Statistics:</strong> Internet usage data for the
+              Middle East and Lebanon
+            </li>
+          </ul>
+        </section>
+
+        <section class="info-box">
+          <p>
+            <strong>💻 AI-use disclosure:</strong> This site content was partly
+            made with the assistance of an AI writing model and then refined by
+            Serge Chaanine. See References for sources and attribution.
+          </p>
+        </section>
+
+        <section class="warning-box">
+          <p>
+            <strong>⚠️ Disclaimer:</strong> This site is intended for
+            educational purposes only.
+          </p>
+        </section>
       </article>
-   </main>
+
+      <footer>
+        <p><strong>⏰ Last updated:</strong> October 2025</p>
+        <p><a href="../index.html">Back to landing page</a></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem">
+          Web Programming - Fall 25/26<br />
+          © Serge Chaanine. All rights reserved
+        </p>
+      </footer>
+    </main>
+
+    <a
+      href="../index.html"
+      class="floating-back-btn"
+      data-tooltip="Back to Landing Page"
+      >←</a
+    >
+  </body>
+</html>

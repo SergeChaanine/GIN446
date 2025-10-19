@@ -1,112 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>History of HTML Versions</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Overview of the evolution of HTML from its earliest versions through HTML5.2, and what happened afterward with the Living Standard approach."
+    />
+  </head>
 
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <title>History of HTML Versions</title>
-   <meta name="description"
-      content="Overview of the evolution of HTML from its earliest versions through HTML5.2, and what happened afterward with the Living Standard approach.">
-</head>
-
-<body>
-   <header>
+  <body>
+    <header>
+      <h1>History of HTML Versions</h1>
+      <h2>From Early HTML to HTML5.2</h2>
       <nav>
-         <h3>Site Navigation:</h3>
-         <p>
-            <a href="index.html">Home</a> |
-            <a href="history.html">History of the Web &amp; Browsers</a> |
-            <a href="security.html">Security on the Web</a> |
-            <a href="mobile-first.html">Mobile-First Development</a> |
-            <a href="stats.html">Internet Stats - Middle East &amp; Lebanon</a> |
-            <a href="css-history.html">CSS History and Rulesets</a> |
-            <a href="references.html">References</a>
-         </p>
-         <h1>History of HTML Versions</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="mobile-first.html">Mobile-First</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li>
+            <a href="html_versions.html" aria-current="page">HTML History</a>
+          </li>
+          <li><a href="css-history.html">CSS History</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
       </nav>
-   </header>
+    </header>
 
-   <main>
+    <main>
       <article>
-         <header>
-            <h2>From Early HTML to HTML5.2</h2>
-         </header>
+        <section>
+          <h2>Overview</h2>
+          <p>
+            HTML (HyperText Markup Language) began in the early 1990s, created
+            by Tim Berners-Lee as a simple language for sharing documents on the
+            World Wide Web. Over the decades, HTML grew through multiple
+            versions: HTML 2.0 standardized basic features, HTML 3.2 introduced
+            tables and applets, and HTML 4.01 brought in stylesheets and
+            scripting support. In the early 2000s, the development of XHTML
+            attempted to make HTML more XML-compliant, but it was eventually set
+            aside in favor of a more practical path forward: HTML5.
+          </p>
+        </section>
 
-         <figure>
-            <img src="pictures/html-evolution.png" alt="Timeline illustration of HTML versions" width="600">
-            <figcaption>Figure: HTML has continuously evolved to support the growing demands of the web.</figcaption>
-         </figure>
+        <figure>
+          <img
+            src="pictures/html-evolution.png"
+            alt="Timeline illustration of HTML versions"
+            width="600"
+          />
+          <figcaption>
+            Figure: HTML has continuously evolved to support the growing demands
+            of the web.
+          </figcaption>
+        </figure>
 
-         <section>
-            <p>HTML (HyperText Markup Language) began in the early 1990s, created by Tim Berners-Lee as a simple
-               language
-               for sharing documents on the World Wide Web. Over the decades, HTML grew through multiple versions:
-               HTML 2.0 standardized basic features, HTML 3.2 introduced tables and applets, and
-               HTML 4.01 brought in stylesheets and scripting support. In the early 2000s, the development of
-               XHTML attempted to make HTML more XML-compliant, but it was eventually set aside in favor of a more
-               practical
-               path forward: HTML5.
-            </p>
-         </section>
+        <section>
+          <h2>The rise of HTML5</h2>
+          <p>
+            HTML5, finalized in 2014, was a major milestone. It introduced
+            semantic elements like &lt;header&gt;, &lt;article&gt;, and
+            &lt;footer&gt;, along with native support for video, audio, and
+            canvas graphics. The goal was to provide richer, plugin-free
+            experiences across devices and browsers. This version marked the
+            rebirth of HTML as the central language of the web, with strong
+            support from browser vendors and the developer community.
+          </p>
+        </section>
 
-         <section>
-            <h3>The rise of HTML5</h3>
-            <p>HTML5, finalized in 2014, was a major milestone. It introduced semantic elements like
-               &lt;header&gt;,
-               &lt;article&gt;, and &lt;footer&gt;, along with native support for video,
-               audio, and
-               canvas graphics. The goal was to provide richer, plugin-free experiences across devices and browsers.
-               This
-               version marked the rebirth of HTML as the central language of the web, with strong support from browser
-               vendors and the developer community.
-            </p>
-         </section>
+        <section>
+          <h2>HTML5.1 and 5.2 refinements</h2>
+          <p>
+            Following HTML5, incremental updates were released. HTML5.1 (2016)
+            and HTML5.2 (2017) improved accessibility, security, and usability.
+            They standardized features like &lt;dialog&gt;, responsive image
+            attributes, and modern input types. These refinements addressed
+            real-world needs and ensured the language stayed relevant in a
+            rapidly evolving web ecosystem.
+          </p>
+        </section>
 
-         <section>
-            <h3>HTML5.1 and 5.2 refinements</h3>
-            <p>Following HTML5, incremental updates were released. HTML5.1 (2016) and HTML5.2 (2017) improved
-               accessibility,
-               security, and usability. They standardized features like &lt;dialog&gt;, responsive image
-               attributes, and modern input types. These refinements addressed real-world needs and ensured the language
-               stayed relevant in a rapidly evolving web ecosystem.</p>
-         </section>
+        <section>
+          <h2>After HTML 5.2: The Living Standard</h2>
+          <p>
+            After 5.2, the W3C stopped versioning HTML. Instead, the WHATWG
+            group adopted a <strong>Living Standard</strong> approach. This
+            means that HTML is now continuously updated, rather than being
+            published as discrete versions. Developers no longer wait years for
+            new versions; instead, features are added, clarified, or deprecated
+            steadily as browser support evolves. Today, "HTML" refers to this
+            ever-evolving standard that underpins the modern web.
+          </p>
+        </section>
 
-         <section>
-            <h3>After HTML 5.2: The Living Standard</h3>
-            <p>After 5.2, the W3C stopped versioning HTML. Instead, the WHATWG group adopted a <strong>Living
-                  Standard</strong>
-               approach. This means that HTML is now continuously updated, rather than being published as discrete
-               versions.
-               Developers no longer wait years for new versions; instead, features are added, clarified, or deprecated
-               steadily as browser support evolves. Today, “HTML” refers to this ever-evolving standard that underpins
-               the
-               modern web.</p>
-         </section>
-
-         <section>
-            <h3>Key takeaways</h3>
-            <ul>
-               <li><strong>Evolutionary growth:</strong> HTML adapted over time to meet new needs like multimedia,
-                  scripting,
-                  and responsive design.</li>
-               <li><strong>Community-driven:</strong> Browser vendors and developers actively shape the language through
-                  collaboration in the WHATWG group.</li>
-               <li><strong>No more versions:</strong> The Living Standard ensures HTML remains up to date without
-                  waiting for
-                  the next “big” release.</li>
-               <li><strong>Focus on interoperability:</strong> Changes prioritize consistency across browsers for
-                  developers
-                  and end users alike.</li>
-            </ul>
-         </section>
-
+        <section>
+          <h2>Key takeaways</h2>
+          <ul>
+            <li>
+              <strong>Evolutionary growth:</strong> HTML adapted over time to
+              meet new needs like multimedia, scripting, and responsive design.
+            </li>
+            <li>
+              <strong>Community-driven:</strong> Browser vendors and developers
+              actively shape the language through collaboration in the WHATWG
+              group.
+            </li>
+            <li>
+              <strong>No more versions:</strong> The Living Standard ensures
+              HTML remains up to date without waiting for the next "big"
+              release.
+            </li>
+            <li>
+              <strong>Focus on interoperability:</strong> Changes prioritize
+              consistency across browsers for developers and end users alike.
+            </li>
+          </ul>
+        </section>
       </article>
-   </main>
+    </main>
 
-   <footer>
+    <footer>
       <p>⏰ Last updated: October 2025</p>
       <p><a href="index.html">Back to home</a></p>
-   </footer>
-</body>
-
+      <p style="margin-top: 1rem; font-size: 0.9rem">
+        Web Programming - Fall 25/26<br />
+        © Serge Chaanine. All rights reserved
+      </p>
+    </footer>
+    <a href="index.html" class="floating-back-btn" data-tooltip="Back to Home"
+      >←</a
+    >
+  </body>
 </html>

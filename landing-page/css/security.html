@@ -1,101 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Security on the Web/Internet</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Common security risks on the Web and practical defenses for users and developers."
+    />
+  </head>
 
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <title>Security on the Web/Internet</title>
-   <meta name="description" content="Common security risks on the Web and practical defenses for users and developers.">
-
-</html>
-
-<head>
-   <nav>
-      <h3>Site Navigation:</h3>
-      <p>
-         <a href="index.html">Home</a> |
-         <a href="history.html">History of the Web &amp; Browsers</a> |
-         <a href="mobile-first.html">Mobile-First Development</a> |
-         <a href="stats.html">Internet Stats - Middle East &amp; Lebanon</a> |
-         <a href="html_versions.html">HTML History</a> |
-         <a href="css-history.html">CSS History and Rulesets</a> |
-         <a href="references.html">References</a>
-      </p>
+  <body>
+    <header>
       <h1>Security on the Web/Internet</h1>
-   </nav>
-</head>
+      <h2>Common Risks and Practical Defenses</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="security.html" aria-current="page">Security</a></li>
+          <li><a href="mobile-first.html">Mobile-First</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="html_versions.html">HTML History</a></li>
+          <li><a href="css-history.html">CSS History</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <article>
+        <section>
+          <h2>Overview</h2>
+          <p>
+            Security on the Web covers threats that range from opportunistic
+            phishing to sophisticated software supply-chain compromises. Threats
+            affect everyone; users, small businesses, large platforms, and often
+            exploit human factors as well as technical weaknesses.
+          </p>
+          <p>
+            The internet has transformed communication, business, and daily
+            life, but its openness also introduces risks. Individuals and
+            organizations face threats ranging from phishing to ransomware. By
+            understanding these risks and adopting safe practices, users can
+            reduce exposure and safeguard digital assets.
+          </p>
+        </section>
 
-<main>
-   <article>
-      <header>
-         <h2>Common Risks and Practical Defenses</h2>
-      </header>
+        <figure>
+          <img
+            src="pictures/phishing.jpg"
+            alt="Illustration showing a fishing hook over an email icon representing phishing"
+            width="600"
+          />
+          <figcaption>
+            Figure: Phishing remains a common method attackers use to gain
+            credentials.
+          </figcaption>
+        </figure>
 
+        <section>
+          <h2>Common Risks</h2>
+          <ul>
+            <li>
+              <strong>Phishing:</strong> Deceptive emails and websites
+              impersonating trusted sources.
+            </li>
+            <li>
+              <strong>Malware & Ransomware:</strong> Malicious programs that
+              steal, spy, or lock data until payment is made.
+            </li>
+            <li>
+              <strong>Data Breaches:</strong> Exposed databases leaking
+              sensitive information for misuse.
+            </li>
+            <li>
+              <strong>Weak Credentials:</strong> Simple or reused passwords
+              enabling unauthorized access.
+            </li>
+            <li>
+              <strong>Public Wi-Fi Risks:</strong> Attackers intercept data on
+              unsecured networks.
+            </li>
+            <li>
+              <strong>Social Engineering:</strong> Psychological manipulation
+              that exploits human trust.
+            </li>
+          </ul>
+        </section>
 
-      <section>
-         <p>Security on the Web covers threats that range from opportunistic phishing to sophisticated software
-            supply-chain compromises. Threats affect everyone; users, small businesses, large platforms, and often
-            exploit human factors as well as technical weaknesses.</p>
-      </section>
+        <section>
+          <h2>Safe Practices</h2>
+          <p>
+            Before entering sensitive information into a website, look for the
+            security padlock symbol. The padlock is one way of checking that a
+            website is safe and indicates that the information you submit is
+            secure.
+          </p>
 
+          <h3>How to verify website security:</h3>
+          <ul>
+            <li>
+              <strong>Check the padlock icon:</strong> Double-click the icon. It
+              will display the certificate information for the page you are
+              viewing to guarantee that you are on a safe, secure website. Make
+              sure the certificate is current and issued to the same company you
+              are visiting.
+            </li>
+            <li>
+              <strong>Beware of fake padlocks:</strong> Don't be fooled by a
+              padlock that appears on the web page itself because it is possible
+              for a cyber criminal to copy the image. So, double check that the
+              padlock is in the window frame of the browser itself.
+            </li>
+            <li>
+              <strong>Verify HTTPS:</strong> After validating the padlock, you
+              can also check the text before the website name in the address
+              bar. The "https" is another indication that the page you are
+              viewing is secure.
+            </li>
+            <li>
+              <strong>Monitor URL changes:</strong> Pay attention to the web
+              address. Check the address and if you click on a link, look to
+              make sure that the address stayed the same. If it has changed,
+              then it has taken you to a fraudulent web address where cyber
+              criminals can monitor and access your information.
+            </li>
+          </ul>
+        </section>
 
-      <figure>
-         <img src="pictures/phishing.jpg"
-            alt="Illustration showing a fishing hook over an email icon representing phishing" width="600">
-         <figcaption>Figure: Phishing remains a common method attackers use to gain credentials.</figcaption>
-      </figure>
-   </article>
+        <section>
+          <h3>Additional Security Tips</h3>
+          <ul>
+            <li>Use strong, unique passwords for each online account</li>
+            <li>Enable two-factor authentication wherever possible</li>
+            <li>Keep your software and browsers up to date</li>
+            <li>
+              Be cautious with email attachments and links from unknown sources
+            </li>
+            <li>Use a VPN when connecting to public Wi-Fi networks</li>
+            <li>Regularly backup important data</li>
+          </ul>
+        </section>
+      </article>
+    </main>
 
-   <article>
-      <section>
-         <p>The internet has transformed communication, business, and daily life, but its openness also introduces
-            risks.
-            Individuals and organizations face threats ranging from phishing to ransomware. By understanding these risks
-            and
-            adopting safe practices, users can reduce exposure and safeguard digital assets.</p>
-      </section>
-
-      <section>
-         <h2>Common Risks</h2>
-         <ul>
-            <li><strong>Phishing:</strong> Deceptive emails and websites impersonating trusted sources.</li>
-            <li><strong>Malware & Ransomware:</strong> Malicious programs that steal, spy, or lock data until payment is
-               made.</li>
-            <li><strong>Data Breaches:</strong> Exposed databases leaking sensitive information for misuse.</li>
-            <li><strong>Weak Credentials:</strong> Simple or reused passwords enabling unauthorized access.</li>
-            <li><strong>Public Wi-Fi Risks:</strong> Attackers intercept data on unsecured networks.</li>
-            <li><strong>Social Engineering:</strong> Psychological manipulation that exploits human trust.</li>
-         </ul>
-      </section>
-
-      <section>
-         <h2>Safe Practices</h2>
-         <p>Before entering sensitive information into a website, look for the security padlock symbol. The padlock is
-            one way of checking that a website is safe and indicates that the information you submit is secure.</p>
-         <ul>
-            <li>Double-click the icon. It will display the certificate information for the page you are viewing to
-               guarantee that you are on a safe, secure website. Make sure the certificate is current and issued to the
-               same company you are visiting.</li>
-            <li>Don’t be fooled by a padlock that appears on the web page itself because it is possible for a cyber
-               criminal to copy the image. So, double check that the padlock is in the window frame of the browser
-               itself.</li>
-            <li>After validating the padlock, you can also check the text before the website name in the address bar.
-               The “https” is another indication that the page you are viewing is secure.</li>
-            <li>Pay attention to the web address. Check the address and if you click on a link, look to make sure that
-               the address stayed the same. If it has changed, then it has taken you to a fraudulent web address where
-               cyber criminals can monitor and access your information.</li>
-         </ul>
-      </section>
-
-   </article>
-</main>
-
-
-<footer>
-   <p>⏰ Last updated: October 2025</p>
-   <p><a href="index.html">Back to home</a></p>
-</footer>
-</body>
-
+    <footer>
+      <p>⏰ Last updated: October 2025</p>
+      <p><a href="index.html">Back to home</a></p>
+      <p style="margin-top: 1rem; font-size: 0.9rem">
+        Web Programming - Fall 25/26<br />
+        © Serge Chaanine. All rights reserved
+      </p>
+    </footer>
+    <a href="index.html" class="floating-back-btn" data-tooltip="Back to Home"
+      >←</a
+    >
+  </body>
 </html>

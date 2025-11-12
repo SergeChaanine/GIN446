@@ -194,6 +194,30 @@ h1 {
   background-color: #008678;
 }
 
+.btn-group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.btn-group .btn {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+.btn-group-two {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-group-two .btn {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
 .disclaimers {
   max-width: 900px;
   margin: 0 auto 20px;

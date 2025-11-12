@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Web Events Catalog - Browser Events Reference</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
+      name="description"
+      content="Comprehensive catalog of browser events with categories, descriptions, and supported HTML tags"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <span class="logo-icon">📗</span>
+        <span class="logo-text">Web Events Catalog</span>
+      </div>
+      <nav class="nav-buttons">
+<button
+          class="nav-btn"
+          onclick="window.location.href='../index.html'"
+        >
+          Homepage
+        </button>
+                <button
+          class="nav-btn"
+          onclick="window.location.href='../schedule/index.html'"
+        >
+          Schedule
+        </button>
+        <button class="nav-btn" onclick="window.location.href='../cv/index.html'">
+          CV
+        </button>
+        <button
+          class="nav-btn"
+          onclick="window.location.href='../arabic-page/index.html'"
+        >
+          Arabic Page - F1
+        </button>
+        <button
+          class="nav-btn"
+          onclick="window.location.href='../cv-builder/index.html'"
+        >
+          CV Builder
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="page-header">
+          <h1>Browser Events Reference</h1>
+          <p class="subtitle">
+            A comprehensive catalog of browser events organized by category
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-section">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search events by name or description..."
+            />
+          </div>
+
+          <div class="category-filters">
+            <button class="category-btn active" data-category="all">
+              All Events <span class="count" id="countAll">0</span>
+            </button>
+            <button class="category-btn" data-category="Mouse">
+              Mouse <span class="count" id="countMouse">0</span>
+            </button>
+            <button class="category-btn" data-category="Keyboard">
+              Keyboard <span class="count" id="countKeyboard">0</span>
+            </button>
+            <button class="category-btn" data-category="Form">
+              Form <span class="count" id="countForm">0</span>
+            </button>
+            <button class="category-btn" data-category="Window">
+              Window <span class="count" id="countWindow">0</span>
+            </button>
+            <button class="category-btn" data-category="Clipboard">
+              Clipboard <span class="count" id="countClipboard">0</span>
+            </button>
+            <button class="category-btn" data-category="Drag & Drop">
+              Drag & Drop <span class="count" id="countDragDrop">0</span>
+            </button>
+            <button class="category-btn" data-category="Touch">
+              Touch <span class="count" id="countTouch">0</span>
+            </button>
+            <button class="category-btn" data-category="Pointer">
+              Pointer <span class="count" id="countPointer">0</span>
+            </button>
+            <button class="category-btn" data-category="Media">
+              Media <span class="count" id="countMedia">0</span>
+            </button>
+            <button class="category-btn" data-category="Animation">
+              Animation <span class="count" id="countAnimation">0</span>
+            </button>
+            <button class="category-btn" data-category="DOM">
+              DOM <span class="count" id="countDOM">0</span>
+            </button>
+            <button class="category-btn" data-category="Focus">
+              Focus <span class="count" id="countFocus">0</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Results Info -->
+        <div class="results-info">
+          <p id="resultsCount">Showing all events</p>
+        </div>
+
+        <!-- Events Grid -->
+        <div id="eventsGrid" class="events-grid"></div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="no-results hidden">
+          <p>No events found matching your criteria.</p>
+          <button class="reset-btn" onclick="resetFilters()">
+            Reset Filters
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="disclaimers">
+      <p class="disclaimer-text">
+        AI-use disclosure: This site content was partly made with the assistance
+        of an AI writing model and then refined by Serge Chaanine. See
+        References for sources and attribution.
+      </p>
+      <p class="disclaimer-text">
+        Disclaimer: This site is intended for educational purposes only.
+      </p>
+    </div>
+
+    <footer>
+      <p>Last Updated: November 2025</p>
+      <br />
+      <p>Web Programming - Fall 25/26</p>
+      <p>&copy; Serge Chaanine. All rights reserved.</p>
+    </footer>
+
+    <a
+      href="../index.html"
+      class="floating-back-btn"
+      title="Back to Landing Page"
+      >←</a
+    >
+
+    <script src="events-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

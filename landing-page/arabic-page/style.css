@@ -69,18 +69,19 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   background: white;
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section {
   text-align: center;
   margin-bottom: 50px;
-  padding: 30px;
+  padding: 40px 30px;
   background: linear-gradient(135deg, #0066cc, #00a896);
-  border-radius: 12px;
+  border-radius: 16px;
   color: white;
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
 }
 
 .hero-section h1 {
@@ -115,6 +116,56 @@ main {
   text-align: justify;
 }
 
+/* Image Styling */
+.feature-image {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: all 0.4s ease;
+  border: 3px solid #f0f0f0;
+}
+
+.feature-image:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 102, 204, 0.3);
+  border-color: #0066cc;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #e8e8e8, #f8f8f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.image-placeholder::before {
+  content: '📷';
+  font-size: 48px;
+  opacity: 0.3;
+  position: absolute;
+}
+
 .teams-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -123,17 +174,18 @@ main {
 }
 
 .team-card {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s;
   border-right: 4px solid #00a896;
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-right-color: #0066cc;
 }
 
 .team-card h3 {
@@ -158,10 +210,16 @@ main {
 .stat-box {
   background: linear-gradient(135deg, #0066cc, #00a896);
   color: white;
-  padding: 25px;
-  border-radius: 10px;
+  padding: 30px 25px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 102, 204, 0.25);
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 102, 204, 0.35);
 }
 
 .stat-box .number {
@@ -176,10 +234,11 @@ main {
 }
 
 .drivers-list {
-  background: #f8f9fa;
-  padding: 25px;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  padding: 30px;
+  border-radius: 12px;
   margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .drivers-list ul {
@@ -188,19 +247,22 @@ main {
 }
 
 .drivers-list li {
-  padding: 12px;
+  padding: 15px;
   margin-bottom: 10px;
   background: white;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   font-size: 15px;
   color: #333;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  border-left: 3px solid transparent;
 }
 
 .drivers-list li:hover {
-  background: #e3f2fd;
-  transform: translateX(-5px);
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  transform: translateX(-8px);
+  border-left-color: #0066cc;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
 }
 
 .drivers-list li strong {
@@ -291,6 +353,11 @@ footer p {
 
   .section h2 {
     font-size: 24px;
+  }
+
+  .feature-image {
+    height: 280px;
+    border-radius: 12px;
   }
 
   .teams-grid {

@@ -74,7 +74,7 @@ function captureFormData() {
         institution,
         period,
         gpa,
-        details: details ? details.split('\n').filter(d => d.trim()) : []
+        details: details ? details.split('\n').filter(d => d.trim()) : [] //split the text area into array + filter empty lines
       });
     }
   });
@@ -114,7 +114,6 @@ function captureFormData() {
   });
 }
 
-// Render CV preview
 function renderCV() {
   // Render personal info
   document.getElementById('previewName').textContent = cvData.personal.fullName.toUpperCase();
@@ -330,8 +329,7 @@ function addProject() {
 function removeItem(button) {
   const item = button.closest('.repeatable-item');
   const container = item.parentElement;
-  
-  // Don't remove if it's the last item
+  // Don't remove if last
   if (container.querySelectorAll('.repeatable-item').length > 1) {
     item.remove();
   } else {

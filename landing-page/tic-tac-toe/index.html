@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tic Tac Toe Game - Interactive Browser Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
+      name="description"
+      content="Play Tic Tac Toe game - A classic two-player game built with HTML, CSS, and JavaScript"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <span class="logo-icon">🎮</span>
+        <span class="logo-text">Tic Tac Toe</span>
+      </div>
+      <nav class="nav-buttons">
+       <button class="nav-btn" onclick="window.location.href='../index.html'">
+          Homepage
+        </button>
+        <button
+          class="nav-btn"
+          onclick="window.location.href='../schedule/index.html'"
+        >
+          Schedule
+        </button>
+        <button
+          class="nav-btn"
+          onclick="window.location.href='../cv/index.html'"
+        >
+          CV
+        </button>
+        <button
+          class="nav-btn"
+          onclick="window.location.href='../arabic-page/index.html'"
+        >
+          Arabic Page - F1
+        </button>
+        <button
+          class="nav-btn"
+          onclick="window.location.href='../cv-builder/index.html'"
+        >
+          CV Builder
+        </button>
+        <button
+          class="nav-btn"
+          onclick="window.location.href='../events-catalog/index.html'"
+        >
+          Events Catalog
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="game-header">
+          <h1>Tic Tac Toe</h1>
+          <p class="subtitle">Challenge yourself or play with a friend</p>
+        </div>
+
+        <div class="game-wrapper">
+          <!-- Left Sidebar - Game Mode & Stats -->
+          <aside class="game-sidebar">
+            <div class="mode-selection">
+              <h3>Game Mode</h3>
+              <div class="mode-buttons">
+                <button class="mode-btn active" data-mode="player">
+                   2 Players
+                </button>
+                <button class="mode-btn" data-mode="ai">
+                   vs AI
+                </button>
+              </div>
+            </div>
+
+            <div class="difficulty-selection hidden" id="difficultySection">
+              <h3>AI Difficulty</h3>
+              <div class="difficulty-buttons">
+                <button class="difficulty-btn" data-difficulty="easy">
+                   Easy
+                </button>
+                <button class="difficulty-btn active" data-difficulty="medium">
+                   Medium
+                </button>
+                <button class="difficulty-btn" data-difficulty="hard">
+                   Impossible
+                </button>
+              </div>
+            </div>
+
+            <div class="stats-panel">
+              <h3>Match Statistics</h3>
+              <div class="stat-row">
+                <div class="stat-item player-x">
+                  <div class="stat-icon">❌</div>
+                  <div class="stat-info">
+                    <span class="stat-label">Player X</span>
+                    <span class="stat-value" id="scoreX">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-item player-o">
+                  <div class="stat-icon">⭕</div>
+                  <div class="stat-info">
+                    <span class="stat-label" id="playerOLabel">Player O</span>
+                    <span class="stat-value" id="scoreO">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-item draws">
+                  <div class="stat-icon">🤝</div>
+                  <div class="stat-info">
+                    <span class="stat-label">Draws</span>
+                    <span class="stat-value" id="scoreDraw">0</span>
+                  </div>
+                </div>
+              </div>
+              <button class="clear-stats-btn" id="clearScoresBtn">
+                Clear Statistics
+              </button>
+            </div>
+          </aside>
+
+          <!-- Center - Game Board -->
+          <div class="game-center">
+            <div class="player-turn-banner">
+              <span id="turnIndicator">Player X's Turn</span>
+            </div>
+
+            <div class="game-board" id="gameBoard">
+              <button class="cell" data-index="0" aria-label="Cell 1"></button>
+              <button class="cell" data-index="1" aria-label="Cell 2"></button>
+              <button class="cell" data-index="2" aria-label="Cell 3"></button>
+              <button class="cell" data-index="3" aria-label="Cell 4"></button>
+              <button class="cell" data-index="4" aria-label="Cell 5"></button>
+              <button class="cell" data-index="5" aria-label="Cell 6"></button>
+              <button class="cell" data-index="6" aria-label="Cell 7"></button>
+              <button class="cell" data-index="7" aria-label="Cell 8"></button>
+              <button class="cell" data-index="8" aria-label="Cell 9"></button>
+            </div>
+
+            <div class="game-controls">
+              <button class="control-btn new-game-btn" id="resetBtn">
+                 New Game
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Sidebar - Instructions -->
+          <aside class="info-sidebar">
+            <div class="instructions">
+              <h3>How to Play</h3>
+              <div class="instruction-item">
+                <span class="instruction-number">1</span>
+                <p>Choose your game mode: 2 Players or vs AI</p>
+              </div>
+              <div class="instruction-item">
+                <span class="instruction-number">2</span>
+                <p>Players take turns placing X's and O's</p>
+              </div>
+              <div class="instruction-item">
+                <span class="instruction-number">3</span>
+                <p>Get 3 in a row to win (horizontal, vertical, or diagonal)</p>
+              </div>
+              <div class="instruction-item">
+                <span class="instruction-number">4</span>
+                <p>If all cells fill with no winner, it's a draw</p>
+              </div>
+            </div>
+
+            <div class="ai-info">
+              <h3>AI Difficulty</h3>
+              <div class="difficulty-info-item">
+                <strong> Easy:</strong>
+                <p>AI makes random moves.</p>
+              </div>
+              <div class="difficulty-info-item">
+                <strong> Medium:</strong>
+                <p>AI blocks your wins and takes obvious victories.</p>
+              </div>
+              <div class="difficulty-info-item">
+                <strong> Impossible:</strong>
+                <p>Unbeatable AI using minimax algorithm.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Game Message Modal -->
+        <div class="game-message hidden" id="gameMessage">
+          <div class="message-content">
+            <div class="message-icon" id="messageIcon"></div>
+            <h2 id="messageText"></h2>
+            <button class="play-again-btn" id="playAgainBtn">
+              Play Again
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <div class="disclaimers">
+        <p class="disclaimer-text">
+          AI-use disclosure: This site content was partly made with the
+          assistance of an AI writing model and then refined by Serge Chaanine.
+          See References for sources and attribution.
+        </p>
+        <p class="disclaimer-text">
+          Disclaimer: This site is intended for educational purposes only.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Last Updated: December 2025</p>
+      <br />
+      <p>Web Programming - Fall 25/26</p>
+      <p>&copy; Serge Chaanine. All rights reserved.</p>
+    </footer>
+
+    <script src="tictactoe.js"></script>
+  </body>
+</html>

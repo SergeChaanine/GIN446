@@ -4,9 +4,9 @@ let searchQuery = '';
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-  updateCategoryCounts();
-  renderEvents(eventsData);
-  setupEventListeners();
+  updateCategoryCounts(); //render count of events
+  renderEvents(eventsData); //render the events
+  setupEventListeners(); //put the search and interaction options 
 });
 
 // Setup event listeners
